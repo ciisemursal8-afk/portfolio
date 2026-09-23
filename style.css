@@ -525,6 +525,66 @@ section {
   line-height: 1.65;
 }
 
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 30px;
+    background: #111;
+}
+
+.project-card {
+    background: #1b1b1f;
+    padding: 20px;
+    border-radius: 18px;
+    border: 1px solid #29292e;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #555;
+}
+
+.project-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.project-card h2 {
+    color: white;
+    margin: 15px 0 8px;
+}
+
+.project-card p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.project-card a {
+    text-decoration: none;
+}
+
+.project-card button {
+    margin-top: 10px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #111;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-card button:hover {
+    transform: scale(1.05);
+    background: #ddd;
+}
+
 
 #services {
   background: var(--bg-panel);
@@ -533,9 +593,14 @@ section {
 }
 
 
+
+#myButton:hover {
+    background-color: gray;
+}
+
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 26px;
   animation: kwrn 1s ease-in;
 }
